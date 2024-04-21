@@ -63,6 +63,56 @@ namespace Pawsitive_Training_pt2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap apps {
+            get {
+                object obj = ResourceManager.GetObject("apps", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap apps1 {
+            get {
+                object obj = ResourceManager.GetObject("apps1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("image-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap paw_heart {
+            get {
+                object obj = ResourceManager.GetObject("paw-heart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap paw_heart__1_ {
+            get {
+                object obj = ResourceManager.GetObject("paw-heart (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap PAWSITIVE_TRAINING_DESIGN {
             get {
                 object obj = ResourceManager.GetObject("PAWSITIVE TRAINING DESIGN", resourceCulture);
@@ -86,6 +136,36 @@ namespace Pawsitive_Training_pt2.Properties {
         internal static System.Drawing.Bitmap PAWSITIVE_TRAINING_DESIGN__3_ {
             get {
                 object obj = ResourceManager.GetObject("PAWSITIVE TRAINING DESIGN (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PAWSITIVE_TRAINING_DESIGN__4_ {
+            get {
+                object obj = ResourceManager.GetObject("PAWSITIVE TRAINING DESIGN (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PAWSITIVE_TRAINING_DESIGN__5__removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("PAWSITIVE_TRAINING_DESIGN__5_-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shutterstock_1073296643 {
+            get {
+                object obj = ResourceManager.GetObject("shutterstock_1073296643", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

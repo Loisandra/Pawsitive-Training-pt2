@@ -13,6 +13,10 @@ namespace Pawsitive_Training_pt2
 {
     public partial class frmLogin : Form
     {
+        public string GetLoggedInUsername()
+        {
+            return txtUsername.Text;
+        }
         public frmLogin()
         {
             InitializeComponent();
@@ -30,8 +34,23 @@ namespace Pawsitive_Training_pt2
 
             if (dr.Read() == true)
             {
-                new dashboard().Show();
-                this.Hide();
+                string username = GetLoggedInUsername();
+                if (username == "admin" && txtPassword.Text == "1234")
+                {
+                    new AdminMain().Show();
+                    this.Hide();
+                }
+                else
+                {
+                    new Addlog(username);
+                    new TrainingGoal(username);
+                    new dashboard(username);
+                    new FeedBack(username);
+                    new Report(username);
+                    new DogProfile(username);
+                    new TheMain(username).Show();                   
+                    this.Hide();
+                }
             }
             else
             {
@@ -40,6 +59,8 @@ namespace Pawsitive_Training_pt2
                 txtPassword.Text = "";
                 txtUsername.Focus();
             }
+
+            con.Close();
         }
 
         private void btnclear_Click(object sender, EventArgs e)
