@@ -67,11 +67,14 @@
             btnhump = new Button();
             btnflick = new Button();
             label11 = new Label();
+            panel1 = new Panel();
             panel3.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel3
             // 
+            panel3.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel3.BackColor = Color.Peru;
             panel3.Controls.Add(lblnotes);
             panel3.Controls.Add(lblinjury);
@@ -101,20 +104,22 @@
             // 
             // lblnotes
             // 
+            lblnotes.Anchor = AnchorStyles.None;
             lblnotes.BackColor = Color.Transparent;
-            lblnotes.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblnotes.Location = new Point(182, 211);
+            lblnotes.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold);
+            lblnotes.Location = new Point(462, 39);
             lblnotes.Name = "lblnotes";
-            lblnotes.Size = new Size(515, 42);
+            lblnotes.Size = new Size(235, 206);
             lblnotes.TabIndex = 23;
             lblnotes.Text = "---";
             // 
             // lblinjury
             // 
+            lblinjury.Anchor = AnchorStyles.None;
             lblinjury.AutoSize = true;
             lblinjury.BackColor = Color.Transparent;
-            lblinjury.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblinjury.Location = new Point(182, 186);
+            lblinjury.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold);
+            lblinjury.Location = new Point(177, 187);
             lblinjury.Name = "lblinjury";
             lblinjury.Size = new Size(27, 20);
             lblinjury.TabIndex = 22;
@@ -122,10 +127,11 @@
             // 
             // lblincident
             // 
+            lblincident.Anchor = AnchorStyles.None;
             lblincident.AutoSize = true;
             lblincident.BackColor = Color.Transparent;
-            lblincident.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblincident.Location = new Point(182, 160);
+            lblincident.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold);
+            lblincident.Location = new Point(177, 161);
             lblincident.Name = "lblincident";
             lblincident.Size = new Size(27, 20);
             lblincident.TabIndex = 21;
@@ -133,10 +139,11 @@
             // 
             // lbltrainer
             // 
+            lbltrainer.Anchor = AnchorStyles.None;
             lbltrainer.AutoSize = true;
             lbltrainer.BackColor = Color.Transparent;
-            lbltrainer.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lbltrainer.Location = new Point(182, 137);
+            lbltrainer.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold);
+            lbltrainer.Location = new Point(177, 138);
             lbltrainer.Name = "lbltrainer";
             lbltrainer.Size = new Size(27, 20);
             lbltrainer.TabIndex = 20;
@@ -144,10 +151,11 @@
             // 
             // lblloc
             // 
+            lblloc.Anchor = AnchorStyles.None;
             lblloc.AutoSize = true;
             lblloc.BackColor = Color.Transparent;
-            lblloc.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblloc.Location = new Point(182, 112);
+            lblloc.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold);
+            lblloc.Location = new Point(177, 113);
             lblloc.Name = "lblloc";
             lblloc.Size = new Size(27, 20);
             lblloc.TabIndex = 19;
@@ -155,10 +163,11 @@
             // 
             // lblduration
             // 
+            lblduration.Anchor = AnchorStyles.None;
             lblduration.AutoSize = true;
             lblduration.BackColor = Color.Transparent;
-            lblduration.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblduration.Location = new Point(182, 87);
+            lblduration.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold);
+            lblduration.Location = new Point(177, 88);
             lblduration.Name = "lblduration";
             lblduration.Size = new Size(27, 20);
             lblduration.TabIndex = 18;
@@ -166,10 +175,11 @@
             // 
             // lblgoal
             // 
+            lblgoal.Anchor = AnchorStyles.None;
             lblgoal.AutoSize = true;
             lblgoal.BackColor = Color.Transparent;
-            lblgoal.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblgoal.Location = new Point(183, 61);
+            lblgoal.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold);
+            lblgoal.Location = new Point(178, 62);
             lblgoal.Name = "lblgoal";
             lblgoal.Size = new Size(27, 20);
             lblgoal.TabIndex = 17;
@@ -177,10 +187,11 @@
             // 
             // lbldate
             // 
+            lbldate.Anchor = AnchorStyles.None;
             lbldate.AutoSize = true;
             lbldate.BackColor = Color.Transparent;
-            lbldate.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lbldate.Location = new Point(182, 38);
+            lbldate.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold);
+            lbldate.Location = new Point(177, 39);
             lbldate.Name = "lbldate";
             lbldate.Size = new Size(27, 20);
             lbldate.TabIndex = 16;
@@ -188,10 +199,11 @@
             // 
             // label8
             // 
+            label8.Anchor = AnchorStyles.None;
             label8.AutoSize = true;
             label8.BackColor = Color.Transparent;
-            label8.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(86, 211);
+            label8.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold);
+            label8.Location = new Point(363, 38);
             label8.Name = "label8";
             label8.Size = new Size(93, 20);
             label8.TabIndex = 15;
@@ -199,10 +211,11 @@
             // 
             // label7
             // 
+            label7.Anchor = AnchorStyles.None;
             label7.AutoSize = true;
             label7.BackColor = Color.Transparent;
-            label7.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(29, 186);
+            label7.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold);
+            label7.Location = new Point(24, 187);
             label7.Name = "label7";
             label7.Size = new Size(151, 20);
             label7.TabIndex = 14;
@@ -210,10 +223,11 @@
             // 
             // label6
             // 
+            label6.Anchor = AnchorStyles.None;
             label6.AutoSize = true;
             label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(13, 160);
+            label6.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold);
+            label6.Location = new Point(8, 161);
             label6.Name = "label6";
             label6.Size = new Size(167, 20);
             label6.TabIndex = 13;
@@ -221,10 +235,11 @@
             // 
             // label5
             // 
+            label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(116, 136);
+            label5.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold);
+            label5.Location = new Point(111, 137);
             label5.Name = "label5";
             label5.Size = new Size(60, 20);
             label5.TabIndex = 12;
@@ -232,10 +247,11 @@
             // 
             // label4
             // 
+            label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(105, 112);
+            label4.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold);
+            label4.Location = new Point(100, 113);
             label4.Name = "label4";
             label4.Size = new Size(72, 20);
             label4.TabIndex = 11;
@@ -243,10 +259,11 @@
             // 
             // label3
             // 
+            label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(15, 87);
+            label3.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold);
+            label3.Location = new Point(10, 88);
             label3.Name = "label3";
             label3.Size = new Size(161, 20);
             label3.TabIndex = 10;
@@ -254,10 +271,11 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(131, 38);
+            label2.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold);
+            label2.Location = new Point(126, 39);
             label2.Name = "label2";
             label2.Size = new Size(45, 20);
             label2.TabIndex = 9;
@@ -265,10 +283,11 @@
             // 
             // label9
             // 
+            label9.Anchor = AnchorStyles.None;
             label9.AutoSize = true;
             label9.BackColor = Color.Transparent;
-            label9.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.Location = new Point(74, 61);
+            label9.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold);
+            label9.Location = new Point(69, 62);
             label9.Name = "label9";
             label9.Size = new Size(103, 20);
             label9.TabIndex = 8;
@@ -276,6 +295,7 @@
             // 
             // comboboxdate
             // 
+            comboboxdate.Anchor = AnchorStyles.None;
             comboboxdate.FormattingEnabled = true;
             comboboxdate.Location = new Point(220, 8);
             comboboxdate.Name = "comboboxdate";
@@ -285,9 +305,10 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Bold);
             label1.Location = new Point(9, 12);
             label1.Name = "label1";
             label1.Size = new Size(205, 17);
@@ -296,9 +317,10 @@
             // 
             // btndel
             // 
+            btndel.Anchor = AnchorStyles.None;
             btndel.BackColor = Color.SaddleBrown;
             btndel.FlatStyle = FlatStyle.Flat;
-            btndel.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btndel.Font = new Font("Segoe UI", 9F);
             btndel.ForeColor = SystemColors.ControlLightLight;
             btndel.Location = new Point(612, 6);
             btndel.Name = "btndel";
@@ -310,9 +332,10 @@
             // 
             // btnview
             // 
+            btnview.Anchor = AnchorStyles.None;
             btnview.BackColor = Color.SaddleBrown;
             btnview.FlatStyle = FlatStyle.Flat;
-            btnview.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnview.Font = new Font("Segoe UI", 9F);
             btnview.ForeColor = SystemColors.ControlLightLight;
             btnview.Location = new Point(423, 6);
             btnview.Name = "btnview";
@@ -324,9 +347,10 @@
             // 
             // btnadd
             // 
+            btnadd.Anchor = AnchorStyles.None;
             btnadd.BackColor = Color.SaddleBrown;
             btnadd.FlatStyle = FlatStyle.Flat;
-            btnadd.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnadd.Font = new Font("Segoe UI", 9F);
             btnadd.ForeColor = SystemColors.ControlLightLight;
             btnadd.Location = new Point(518, 6);
             btnadd.Name = "btnadd";
@@ -338,9 +362,10 @@
             // 
             // label10
             // 
+            label10.Anchor = AnchorStyles.Top;
             label10.AutoSize = true;
             label10.BackColor = Color.Transparent;
-            label10.Font = new Font("Goudy Stout", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.Font = new Font("Goudy Stout", 18F, FontStyle.Bold);
             label10.Location = new Point(67, 15);
             label10.Name = "label10";
             label10.Size = new Size(599, 32);
@@ -349,10 +374,11 @@
             // 
             // btntilt
             // 
+            btntilt.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btntilt.BackColor = Color.SaddleBrown;
             btntilt.FlatStyle = FlatStyle.Flat;
             btntilt.ForeColor = Color.White;
-            btntilt.Location = new Point(76, 54);
+            btntilt.Location = new Point(8, 11);
             btntilt.Name = "btntilt";
             btntilt.Size = new Size(104, 51);
             btntilt.TabIndex = 9;
@@ -362,10 +388,11 @@
             // 
             // btnwag
             // 
+            btnwag.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnwag.BackColor = Color.SaddleBrown;
             btnwag.FlatStyle = FlatStyle.Flat;
             btnwag.ForeColor = Color.White;
-            btnwag.Location = new Point(196, 54);
+            btnwag.Location = new Point(128, 11);
             btnwag.Name = "btnwag";
             btnwag.Size = new Size(104, 51);
             btnwag.TabIndex = 10;
@@ -375,10 +402,11 @@
             // 
             // btnbite
             // 
+            btnbite.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnbite.BackColor = Color.SaddleBrown;
             btnbite.FlatStyle = FlatStyle.Flat;
             btnbite.ForeColor = Color.White;
-            btnbite.Location = new Point(315, 54);
+            btnbite.Location = new Point(247, 11);
             btnbite.Name = "btnbite";
             btnbite.Size = new Size(104, 51);
             btnbite.TabIndex = 11;
@@ -388,10 +416,11 @@
             // 
             // btnshake
             // 
+            btnshake.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnshake.BackColor = Color.SaddleBrown;
             btnshake.FlatStyle = FlatStyle.Flat;
             btnshake.ForeColor = Color.White;
-            btnshake.Location = new Point(435, 54);
+            btnshake.Location = new Point(367, 11);
             btnshake.Name = "btnshake";
             btnshake.Size = new Size(104, 51);
             btnshake.TabIndex = 12;
@@ -401,10 +430,11 @@
             // 
             // btnbark
             // 
+            btnbark.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnbark.BackColor = Color.SaddleBrown;
             btnbark.FlatStyle = FlatStyle.Flat;
             btnbark.ForeColor = Color.White;
-            btnbark.Location = new Point(553, 54);
+            btnbark.Location = new Point(485, 11);
             btnbark.Name = "btnbark";
             btnbark.Size = new Size(104, 51);
             btnbark.TabIndex = 13;
@@ -414,10 +444,11 @@
             // 
             // btngrowl
             // 
+            btngrowl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btngrowl.BackColor = Color.SaddleBrown;
             btngrowl.FlatStyle = FlatStyle.Flat;
             btngrowl.ForeColor = Color.White;
-            btngrowl.Location = new Point(76, 111);
+            btngrowl.Location = new Point(8, 68);
             btngrowl.Name = "btngrowl";
             btngrowl.Size = new Size(104, 51);
             btngrowl.TabIndex = 14;
@@ -427,10 +458,11 @@
             // 
             // btnhowl
             // 
+            btnhowl.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnhowl.BackColor = Color.SaddleBrown;
             btnhowl.FlatStyle = FlatStyle.Flat;
             btnhowl.ForeColor = Color.White;
-            btnhowl.Location = new Point(196, 111);
+            btnhowl.Location = new Point(128, 68);
             btnhowl.Name = "btnhowl";
             btnhowl.Size = new Size(104, 51);
             btnhowl.TabIndex = 15;
@@ -440,10 +472,11 @@
             // 
             // btnpant
             // 
+            btnpant.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnpant.BackColor = Color.SaddleBrown;
             btnpant.FlatStyle = FlatStyle.Flat;
             btnpant.ForeColor = Color.White;
-            btnpant.Location = new Point(315, 111);
+            btnpant.Location = new Point(247, 68);
             btnpant.Name = "btnpant";
             btnpant.Size = new Size(104, 51);
             btnpant.TabIndex = 16;
@@ -453,10 +486,11 @@
             // 
             // btnwhine
             // 
+            btnwhine.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnwhine.BackColor = Color.SaddleBrown;
             btnwhine.FlatStyle = FlatStyle.Flat;
             btnwhine.ForeColor = Color.White;
-            btnwhine.Location = new Point(435, 111);
+            btnwhine.Location = new Point(367, 68);
             btnwhine.Name = "btnwhine";
             btnwhine.Size = new Size(104, 51);
             btnwhine.TabIndex = 17;
@@ -466,10 +500,11 @@
             // 
             // btnsniff
             // 
+            btnsniff.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnsniff.BackColor = Color.SaddleBrown;
             btnsniff.FlatStyle = FlatStyle.Flat;
             btnsniff.ForeColor = Color.White;
-            btnsniff.Location = new Point(553, 111);
+            btnsniff.Location = new Point(485, 68);
             btnsniff.Name = "btnsniff";
             btnsniff.Size = new Size(104, 51);
             btnsniff.TabIndex = 18;
@@ -479,10 +514,11 @@
             // 
             // btnbelly
             // 
+            btnbelly.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnbelly.BackColor = Color.SaddleBrown;
             btnbelly.FlatStyle = FlatStyle.Flat;
             btnbelly.ForeColor = Color.White;
-            btnbelly.Location = new Point(76, 172);
+            btnbelly.Location = new Point(8, 129);
             btnbelly.Name = "btnbelly";
             btnbelly.Size = new Size(104, 51);
             btnbelly.TabIndex = 19;
@@ -492,10 +528,11 @@
             // 
             // btndig
             // 
+            btndig.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btndig.BackColor = Color.SaddleBrown;
             btndig.FlatStyle = FlatStyle.Flat;
             btndig.ForeColor = Color.White;
-            btndig.Location = new Point(196, 172);
+            btndig.Location = new Point(128, 129);
             btndig.Name = "btndig";
             btndig.Size = new Size(104, 51);
             btndig.TabIndex = 20;
@@ -505,10 +542,11 @@
             // 
             // btnpaws
             // 
+            btnpaws.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnpaws.BackColor = Color.SaddleBrown;
             btnpaws.FlatStyle = FlatStyle.Flat;
             btnpaws.ForeColor = Color.White;
-            btnpaws.Location = new Point(315, 172);
+            btnpaws.Location = new Point(247, 129);
             btnpaws.Name = "btnpaws";
             btnpaws.Size = new Size(104, 51);
             btnpaws.TabIndex = 21;
@@ -518,10 +556,11 @@
             // 
             // btnhump
             // 
+            btnhump.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnhump.BackColor = Color.SaddleBrown;
             btnhump.FlatStyle = FlatStyle.Flat;
             btnhump.ForeColor = Color.White;
-            btnhump.Location = new Point(435, 172);
+            btnhump.Location = new Point(367, 129);
             btnhump.Name = "btnhump";
             btnhump.Size = new Size(104, 51);
             btnhump.TabIndex = 22;
@@ -531,10 +570,11 @@
             // 
             // btnflick
             // 
+            btnflick.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnflick.BackColor = Color.SaddleBrown;
             btnflick.FlatStyle = FlatStyle.Flat;
             btnflick.ForeColor = Color.White;
-            btnflick.Location = new Point(553, 172);
+            btnflick.Location = new Point(485, 129);
             btnflick.Name = "btnflick";
             btnflick.Size = new Size(104, 51);
             btnflick.TabIndex = 23;
@@ -544,14 +584,39 @@
             // 
             // label11
             // 
+            label11.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             label11.AutoSize = true;
             label11.BackColor = Color.LightGray;
-            label11.Font = new Font("Segoe UI Variable Display", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.Font = new Font("Segoe UI Variable Display", 8.25F);
             label11.Location = new Point(14, 244);
             label11.Name = "label11";
             label11.Size = new Size(446, 15);
             label11.TabIndex = 38;
             label11.Text = "The section below serves as a log for your training sessions or your dog's behavior records.";
+            // 
+            // panel1
+            // 
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panel1.BackColor = Color.Transparent;
+            panel1.Controls.Add(btntilt);
+            panel1.Controls.Add(btnwag);
+            panel1.Controls.Add(btnflick);
+            panel1.Controls.Add(btnbite);
+            panel1.Controls.Add(btnhump);
+            panel1.Controls.Add(btnshake);
+            panel1.Controls.Add(btnpaws);
+            panel1.Controls.Add(btnbark);
+            panel1.Controls.Add(btndig);
+            panel1.Controls.Add(btngrowl);
+            panel1.Controls.Add(btnbelly);
+            panel1.Controls.Add(btnhowl);
+            panel1.Controls.Add(btnsniff);
+            panel1.Controls.Add(btnpant);
+            panel1.Controls.Add(btnwhine);
+            panel1.Location = new Point(71, 50);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(595, 191);
+            panel1.TabIndex = 39;
             // 
             // Logging
             // 
@@ -560,23 +625,9 @@
             BackgroundImage = Properties.Resources.PAWSITIVE_TRAINING_DESIGN;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(744, 536);
+            Controls.Add(panel1);
             Controls.Add(label11);
             Controls.Add(label10);
-            Controls.Add(btnflick);
-            Controls.Add(btnhump);
-            Controls.Add(btnpaws);
-            Controls.Add(btndig);
-            Controls.Add(btnbelly);
-            Controls.Add(btnsniff);
-            Controls.Add(btnwhine);
-            Controls.Add(btnpant);
-            Controls.Add(btnhowl);
-            Controls.Add(btngrowl);
-            Controls.Add(btnbark);
-            Controls.Add(btnshake);
-            Controls.Add(btnbite);
-            Controls.Add(btnwag);
-            Controls.Add(btntilt);
             Controls.Add(panel3);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
@@ -586,6 +637,7 @@
             Load += Logging_Load;
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -630,5 +682,6 @@
         private Button btnhump;
         private Button btnflick;
         private Label label11;
+        private Panel panel1;
     }
 }

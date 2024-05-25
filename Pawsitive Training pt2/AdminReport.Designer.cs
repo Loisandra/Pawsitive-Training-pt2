@@ -43,6 +43,7 @@
             // 
             // panel1
             // 
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackColor = Color.SaddleBrown;
             panel1.Controls.Add(dgvReport);
             panel1.Location = new Point(23, 27);
@@ -52,15 +53,17 @@
             // 
             // dgvReport
             // 
+            dgvReport.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgvReport.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvReport.Location = new Point(17, 19);
             dgvReport.Name = "dgvReport";
-            dgvReport.RowTemplate.Height = 25;
+            dgvReport.ReadOnly = true;
             dgvReport.Size = new Size(535, 175);
             dgvReport.TabIndex = 0;
             // 
             // btnsubmit
             // 
+            btnsubmit.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             btnsubmit.BackColor = Color.Sienna;
             btnsubmit.FlatStyle = FlatStyle.Flat;
             btnsubmit.ForeColor = Color.White;
@@ -74,6 +77,7 @@
             // 
             // txtboxresponse
             // 
+            txtboxresponse.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             txtboxresponse.Location = new Point(23, 293);
             txtboxresponse.Multiline = true;
             txtboxresponse.Name = "txtboxresponse";
@@ -82,9 +86,10 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Segoe UI Variable Text Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Font = new Font("Segoe UI Variable Text Semibold", 9.75F, FontStyle.Bold);
             label2.Location = new Point(23, 273);
             label2.Name = "label2";
             label2.Size = new Size(69, 17);
@@ -93,6 +98,7 @@
             // 
             // comboboxreport
             // 
+            comboboxreport.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             comboboxreport.FormattingEnabled = true;
             comboboxreport.Location = new Point(404, 249);
             comboboxreport.Name = "comboboxreport";
@@ -102,6 +108,7 @@
             // 
             // comboboxuser
             // 
+            comboboxuser.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             comboboxuser.FormattingEnabled = true;
             comboboxuser.Location = new Point(116, 248);
             comboboxuser.Name = "comboboxuser";
@@ -111,9 +118,10 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI Variable Text Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Segoe UI Variable Text Semibold", 9.75F, FontStyle.Bold);
             label1.Location = new Point(23, 249);
             label1.Name = "label1";
             label1.Size = new Size(87, 17);
@@ -122,9 +130,10 @@
             // 
             // label3
             // 
+            label3.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Segoe UI Variable Text Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Font = new Font("Segoe UI Variable Text Semibold", 9.75F, FontStyle.Bold);
             label3.Location = new Point(284, 250);
             label3.Name = "label3";
             label3.Size = new Size(101, 17);

@@ -40,23 +40,11 @@
             label5 = new Label();
             label3 = new Label();
             label15 = new Label();
-            pictureBox1 = new PictureBox();
-            label19 = new Label();
-            panel3 = new Panel();
             label18 = new Label();
-            pictureBox2 = new PictureBox();
-            label17 = new Label();
-            panel4 = new Panel();
-            pictureBox3 = new PictureBox();
-            label16 = new Label();
-            panel5 = new Panel();
+            btnadd = new Button();
+            MediaPlayer = new AxWMPLib.AxWindowsMediaPlayer();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)MediaPlayer).BeginInit();
             SuspendLayout();
             // 
             // btnexit
@@ -73,7 +61,7 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Goudy Stout", 20.25F, FontStyle.Italic, GraphicsUnit.Point);
+            label1.Font = new Font("Goudy Stout", 20.25F, FontStyle.Italic);
             label1.Location = new Point(12, 19);
             label1.Name = "label1";
             label1.Size = new Size(456, 37);
@@ -92,7 +80,7 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Segoe UI Variable Small", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Segoe UI Variable Small", 9.75F);
             label2.Location = new Point(12, 90);
             label2.Name = "label2";
             label2.Size = new Size(338, 17);
@@ -115,7 +103,7 @@
             // label12
             // 
             label12.BackColor = Color.Transparent;
-            label12.Font = new Font("Segoe UI Variable Text Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label12.Font = new Font("Segoe UI Variable Text Semibold", 9.75F, FontStyle.Bold);
             label12.ForeColor = Color.White;
             label12.Location = new Point(3, 157);
             label12.Name = "label12";
@@ -126,7 +114,7 @@
             // label10
             // 
             label10.BackColor = Color.Transparent;
-            label10.Font = new Font("Segoe UI Variable Text Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.Font = new Font("Segoe UI Variable Text Semibold", 9.75F, FontStyle.Bold);
             label10.ForeColor = Color.White;
             label10.Location = new Point(3, 125);
             label10.Name = "label10";
@@ -137,7 +125,7 @@
             // label8
             // 
             label8.BackColor = Color.Transparent;
-            label8.Font = new Font("Segoe UI Variable Text Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Font = new Font("Segoe UI Variable Text Semibold", 9.75F, FontStyle.Bold);
             label8.ForeColor = Color.White;
             label8.Location = new Point(3, 93);
             label8.Name = "label8";
@@ -148,7 +136,7 @@
             // label5
             // 
             label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Segoe UI Variable Text Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Font = new Font("Segoe UI Variable Text Semibold", 9.75F, FontStyle.Bold);
             label5.ForeColor = Color.White;
             label5.Location = new Point(3, 47);
             label5.Name = "label5";
@@ -159,7 +147,7 @@
             // label3
             // 
             label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Segoe UI Variable Text Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Font = new Font("Segoe UI Variable Text Semibold", 9.75F, FontStyle.Bold);
             label3.ForeColor = Color.White;
             label3.Location = new Point(3, 4);
             label3.Name = "label3";
@@ -171,121 +159,44 @@
             // 
             label15.AutoSize = true;
             label15.BackColor = Color.WhiteSmoke;
-            label15.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label15.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             label15.Location = new Point(15, 328);
             label15.Name = "label15";
             label15.Size = new Size(732, 15);
             label15.TabIndex = 30;
             label15.Text = "Importance of Potty Training: https://www.alphapaws.com/why-housebreaking-or-potty-training-is-important-for-your-puppy/";
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(25, 15);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(229, 201);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.BackColor = Color.Transparent;
-            label19.Font = new Font("Segoe UI Variable Text Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label19.ForeColor = Color.White;
-            label19.Location = new Point(3, 15);
-            label19.Name = "label19";
-            label19.Size = new Size(16, 17);
-            label19.TabIndex = 17;
-            label19.Text = "1.";
-            // 
-            // panel3
-            // 
-            panel3.AutoScroll = true;
-            panel3.BackColor = Color.SaddleBrown;
-            panel3.Controls.Add(label19);
-            panel3.Controls.Add(pictureBox1);
-            panel3.Location = new Point(12, 356);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(279, 231);
-            panel3.TabIndex = 72;
-            // 
             // label18
             // 
             label18.BackColor = Color.WhiteSmoke;
-            label18.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label18.Location = new Point(12, 594);
+            label18.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
+            label18.Location = new Point(541, 672);
             label18.Name = "label18";
             label18.Size = new Size(338, 18);
             label18.TabIndex = 74;
             label18.Text = "Link: https://www.youtube.com/watch?v=8t-Z9wU8zG4";
             // 
-            // pictureBox2
+            // btnadd
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(27, 15);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(229, 201);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
+            btnadd.BackColor = Color.SaddleBrown;
+            btnadd.FlatStyle = FlatStyle.Flat;
+            btnadd.ForeColor = Color.White;
+            btnadd.Location = new Point(541, 614);
+            btnadd.Name = "btnadd";
+            btnadd.Size = new Size(171, 45);
+            btnadd.TabIndex = 76;
+            btnadd.Text = "PLAY VIDEO";
+            btnadd.UseVisualStyleBackColor = false;
+            btnadd.Click += btnadd_Click;
             // 
-            // label17
+            // MediaPlayer
             // 
-            label17.AutoSize = true;
-            label17.BackColor = Color.Transparent;
-            label17.Font = new Font("Segoe UI Variable Text Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label17.ForeColor = Color.White;
-            label17.Location = new Point(3, 15);
-            label17.Name = "label17";
-            label17.Size = new Size(18, 17);
-            label17.TabIndex = 17;
-            label17.Text = "2.";
-            // 
-            // panel4
-            // 
-            panel4.AutoScroll = true;
-            panel4.BackColor = Color.SaddleBrown;
-            panel4.Controls.Add(label17);
-            panel4.Controls.Add(pictureBox2);
-            panel4.Location = new Point(313, 356);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(279, 231);
-            panel4.TabIndex = 73;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(27, 15);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(229, 201);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 19;
-            pictureBox3.TabStop = false;
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.BackColor = Color.Transparent;
-            label16.Font = new Font("Segoe UI Variable Text Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label16.ForeColor = Color.White;
-            label16.Location = new Point(3, 15);
-            label16.Name = "label16";
-            label16.Size = new Size(18, 17);
-            label16.TabIndex = 17;
-            label16.Text = "3.";
-            // 
-            // panel5
-            // 
-            panel5.AutoScroll = true;
-            panel5.BackColor = Color.SaddleBrown;
-            panel5.Controls.Add(label16);
-            panel5.Controls.Add(pictureBox3);
-            panel5.Location = new Point(614, 356);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(279, 231);
-            panel5.TabIndex = 75;
+            MediaPlayer.Enabled = true;
+            MediaPlayer.Location = new Point(12, 352);
+            MediaPlayer.Name = "MediaPlayer";
+            MediaPlayer.OcxState = (AxHost.State)resources.GetObject("MediaPlayer.OcxState");
+            MediaPlayer.Size = new Size(523, 338);
+            MediaPlayer.TabIndex = 75;
             // 
             // Potty
             // 
@@ -293,11 +204,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.PAWSITIVE_TRAINING_DESIGN;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(952, 661);
-            Controls.Add(panel5);
-            Controls.Add(panel4);
+            ClientSize = new Size(952, 747);
+            Controls.Add(btnadd);
+            Controls.Add(MediaPlayer);
             Controls.Add(label18);
-            Controls.Add(panel3);
             Controls.Add(label15);
             Controls.Add(panel2);
             Controls.Add(label2);
@@ -310,15 +220,7 @@
             Text = "Potty";
             MouseDown += Potty_MouseDown;
             panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            panel5.ResumeLayout(false);
-            panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)MediaPlayer).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -336,15 +238,8 @@
         private Label label12;
         private Label label10;
         private Label label8;
-        private PictureBox pictureBox1;
-        private Label label19;
-        private Panel panel3;
         private Label label18;
-        private PictureBox pictureBox2;
-        private Label label17;
-        private Panel panel4;
-        private PictureBox pictureBox3;
-        private Label label16;
-        private Panel panel5;
+        private Button btnadd;
+        private AxWMPLib.AxWindowsMediaPlayer MediaPlayer;
     }
 }

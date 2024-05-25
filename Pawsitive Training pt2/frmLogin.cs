@@ -48,7 +48,7 @@ namespace Pawsitive_Training_pt2
                     new FeedBack(username);
                     new Report(username);
                     new DogProfile(username);
-                    new TheMain(username).Show();                   
+                    new TheMain(username).Show();
                     this.Hide();
                 }
             }
@@ -91,6 +91,11 @@ namespace Pawsitive_Training_pt2
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            new ForgotPass().Show();
         }
     }
 }

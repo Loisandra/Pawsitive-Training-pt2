@@ -36,6 +36,7 @@
             // 
             // panel1
             // 
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackColor = Color.SaddleBrown;
             panel1.Controls.Add(dgvFeedBack);
             panel1.Location = new Point(23, 27);
@@ -45,10 +46,11 @@
             // 
             // dgvFeedBack
             // 
+            dgvFeedBack.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgvFeedBack.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvFeedBack.Location = new Point(17, 19);
             dgvFeedBack.Name = "dgvFeedBack";
-            dgvFeedBack.RowTemplate.Height = 25;
+            dgvFeedBack.ReadOnly = true;
             dgvFeedBack.Size = new Size(535, 324);
             dgvFeedBack.TabIndex = 0;
             // 

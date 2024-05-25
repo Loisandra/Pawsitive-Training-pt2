@@ -33,5 +33,11 @@ namespace Pawsitive_Training_pt2
             ReleaseCapture();
             SendMessage(Handle, 0x112, 0xf012, 0);
         }
+
+        private void btnadd_Click(object sender, EventArgs e)
+        {
+            string f = @"C:\Users\saced\Documents\SANDRA FILES\VIDS\Loose Leash Walking Training - Professional Dog Training Tips.mp4";
+            MediaPlayer.URL = f;
+        }
     }
 }

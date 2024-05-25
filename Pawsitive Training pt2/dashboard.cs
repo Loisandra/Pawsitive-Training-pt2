@@ -15,6 +15,7 @@ namespace Pawsitive_Training_pt2
 {
     public partial class dashboard : Form
     {
+        public event EventHandler DogNameUpdated;
         string username;
         public dashboard(string username)
         {
@@ -27,6 +28,16 @@ namespace Pawsitive_Training_pt2
         OleDbCommand cmd = new OleDbCommand();
         OleDbDataAdapter da = new OleDbDataAdapter();
 
+        protected virtual void OnDogNameUpdated(EventArgs e)
+        {
+            DogNameUpdated?.Invoke(this, e);
+        }
+
+        private void UpdateDogName(string newDogName)
+        {
+            OnDogNameUpdated(EventArgs.Empty);
+        }
+
         private void LoadDataFromDatabase(string username)
         {
             con.Open();
@@ -38,7 +49,7 @@ namespace Pawsitive_Training_pt2
             {
                 lbldogname.Text = reader["DogName"].ToString();
                 lblbreed.Text = reader["DogBreed"].ToString();
-                lblbirth.Text = reader["DOB"].ToString();
+                lblbirth.Text = Convert.ToDateTime(reader["DOB"]).ToShortDateString();
                 lblgender.Text = reader["DogGender"].ToString();
             }
             con.Close();
@@ -63,10 +74,8 @@ namespace Pawsitive_Training_pt2
                             {
                                 if (!reader.IsDBNull(0))
                                 {
-                                    // Retrieve image data from the database
                                     byte[] imageData = (byte[])reader["DogPic"];
 
-                                    // Convert byte array to image and display it in the picprofile PictureBox
                                     using (System.IO.MemoryStream ms = new System.IO.MemoryStream(imageData))
                                     {
                                         picprofile.Image = System.Drawing.Image.FromStream(ms);

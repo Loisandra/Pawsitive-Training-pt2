@@ -13,11 +13,21 @@ namespace Pawsitive_Training_pt2
     public partial class DogProfile : Form
     {
         string username;
+        private int imageNumber = 1;
         public DogProfile(string username)
         {
             InitializeComponent();
             this.username = username;
+        }
 
+        private void LoadNextImage()
+        {
+            if(imageNumber == 10) 
+            {
+                imageNumber = 1;
+            }
+            slidePic.ImageLocation = string.Format(@"Images\{0}.jpg", imageNumber);
+            imageNumber++;
         }
 
         private void btnadd_Click(object sender, EventArgs e)
@@ -36,6 +46,11 @@ namespace Pawsitive_Training_pt2
         {
             Report report = new Report(username);
             report.Show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            LoadNextImage();
         }
     }
 }

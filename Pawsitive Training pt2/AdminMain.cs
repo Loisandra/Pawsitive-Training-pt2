@@ -19,6 +19,7 @@ namespace Pawsitive_Training_pt2
         public AdminMain()
         {
             InitializeComponent();
+            OpenAnotherForm(new AdminUsers());
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]

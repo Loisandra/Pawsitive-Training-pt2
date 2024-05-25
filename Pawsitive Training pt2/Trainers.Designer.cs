@@ -56,6 +56,7 @@
             // 
             // panel3
             // 
+            panel3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel3.AutoScroll = true;
             panel3.BackColor = Color.Chocolate;
             panel3.Controls.Add(panel8);
@@ -70,6 +71,7 @@
             // 
             // panel8
             // 
+            panel8.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel8.AutoScroll = true;
             panel8.BackColor = Color.PeachPuff;
             panel8.Controls.Add(label7);
@@ -89,7 +91,7 @@
             // 
             // label8
             // 
-            label8.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Bold);
             label8.Location = new Point(8, 5);
             label8.Name = "label8";
             label8.Size = new Size(526, 69);
@@ -98,6 +100,7 @@
             // 
             // panel10
             // 
+            panel10.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel10.AutoScroll = true;
             panel10.BackColor = Color.PeachPuff;
             panel10.Controls.Add(label12);
@@ -117,7 +120,7 @@
             // 
             // label13
             // 
-            label13.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label13.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Bold);
             label13.Location = new Point(8, 5);
             label13.Name = "label13";
             label13.Size = new Size(526, 69);
@@ -126,6 +129,7 @@
             // 
             // panel7
             // 
+            panel7.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel7.AutoScroll = true;
             panel7.BackColor = Color.PeachPuff;
             panel7.Controls.Add(label5);
@@ -145,7 +149,7 @@
             // 
             // label6
             // 
-            label6.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Bold);
             label6.Location = new Point(8, 5);
             label6.Name = "label6";
             label6.Size = new Size(526, 69);
@@ -154,6 +158,7 @@
             // 
             // panel9
             // 
+            panel9.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel9.AutoScroll = true;
             panel9.BackColor = Color.PeachPuff;
             panel9.Controls.Add(label9);
@@ -173,7 +178,7 @@
             // 
             // label11
             // 
-            label11.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Bold);
             label11.Location = new Point(8, 5);
             label11.Name = "label11";
             label11.Size = new Size(526, 34);
@@ -182,6 +187,7 @@
             // 
             // panel4
             // 
+            panel4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel4.AutoScroll = true;
             panel4.BackColor = Color.PeachPuff;
             panel4.Controls.Add(label2);
@@ -201,7 +207,7 @@
             // 
             // label1
             // 
-            label1.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Segoe UI Variable Display", 14.25F, FontStyle.Bold);
             label1.Location = new Point(8, 5);
             label1.Name = "label1";
             label1.Size = new Size(304, 29);
@@ -210,8 +216,9 @@
             // 
             // label10
             // 
+            label10.Anchor = AnchorStyles.Top;
             label10.BackColor = Color.Transparent;
-            label10.Font = new Font("Goudy Stout", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.Font = new Font("Goudy Stout", 18F, FontStyle.Bold);
             label10.Location = new Point(55, 11);
             label10.Name = "label10";
             label10.Size = new Size(625, 70);

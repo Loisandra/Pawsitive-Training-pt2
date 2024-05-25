@@ -68,6 +68,7 @@
             // 
             // panel3
             // 
+            panel3.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel3.Controls.Add(btnpotty);
             panel3.Controls.Add(btnloose);
             panel3.Controls.Add(btndead);
@@ -90,6 +91,7 @@
             // 
             // btnpotty
             // 
+            btnpotty.Anchor = AnchorStyles.None;
             btnpotty.BackColor = Color.SeaShell;
             btnpotty.FlatStyle = FlatStyle.Flat;
             btnpotty.Location = new Point(514, 181);
@@ -102,6 +104,7 @@
             // 
             // btnloose
             // 
+            btnloose.Anchor = AnchorStyles.None;
             btnloose.BackColor = Color.SeaShell;
             btnloose.FlatStyle = FlatStyle.Flat;
             btnloose.Location = new Point(388, 181);
@@ -114,6 +117,7 @@
             // 
             // btndead
             // 
+            btndead.Anchor = AnchorStyles.None;
             btndead.BackColor = Color.SeaShell;
             btndead.FlatStyle = FlatStyle.Flat;
             btndead.Location = new Point(262, 181);
@@ -126,6 +130,7 @@
             // 
             // btnfetch
             // 
+            btnfetch.Anchor = AnchorStyles.None;
             btnfetch.BackColor = Color.SeaShell;
             btnfetch.FlatStyle = FlatStyle.Flat;
             btnfetch.Location = new Point(136, 181);
@@ -138,6 +143,7 @@
             // 
             // btnbed
             // 
+            btnbed.Anchor = AnchorStyles.None;
             btnbed.BackColor = Color.SeaShell;
             btnbed.FlatStyle = FlatStyle.Flat;
             btnbed.Location = new Point(10, 181);
@@ -150,6 +156,7 @@
             // 
             // btndrop
             // 
+            btndrop.Anchor = AnchorStyles.None;
             btndrop.BackColor = Color.SeaShell;
             btndrop.FlatStyle = FlatStyle.Flat;
             btndrop.Location = new Point(514, 96);
@@ -162,6 +169,7 @@
             // 
             // btnno
             // 
+            btnno.Anchor = AnchorStyles.None;
             btnno.BackColor = Color.SeaShell;
             btnno.FlatStyle = FlatStyle.Flat;
             btnno.Location = new Point(388, 96);
@@ -174,6 +182,7 @@
             // 
             // btnshake
             // 
+            btnshake.Anchor = AnchorStyles.None;
             btnshake.BackColor = Color.SeaShell;
             btnshake.FlatStyle = FlatStyle.Flat;
             btnshake.Location = new Point(262, 96);
@@ -186,6 +195,7 @@
             // 
             // btnquiet
             // 
+            btnquiet.Anchor = AnchorStyles.None;
             btnquiet.BackColor = Color.SeaShell;
             btnquiet.FlatStyle = FlatStyle.Flat;
             btnquiet.Location = new Point(136, 96);
@@ -198,6 +208,7 @@
             // 
             // btnlie
             // 
+            btnlie.Anchor = AnchorStyles.None;
             btnlie.BackColor = Color.SeaShell;
             btnlie.FlatStyle = FlatStyle.Flat;
             btnlie.Location = new Point(388, 11);
@@ -210,6 +221,7 @@
             // 
             // btnspin
             // 
+            btnspin.Anchor = AnchorStyles.None;
             btnspin.BackColor = Color.SeaShell;
             btnspin.FlatStyle = FlatStyle.Flat;
             btnspin.Location = new Point(514, 11);
@@ -222,6 +234,7 @@
             // 
             // btnroll
             // 
+            btnroll.Anchor = AnchorStyles.None;
             btnroll.BackColor = Color.SeaShell;
             btnroll.FlatStyle = FlatStyle.Flat;
             btnroll.Location = new Point(10, 96);
@@ -234,6 +247,7 @@
             // 
             // btnjump
             // 
+            btnjump.Anchor = AnchorStyles.None;
             btnjump.BackColor = Color.SeaShell;
             btnjump.FlatStyle = FlatStyle.Flat;
             btnjump.Location = new Point(262, 11);
@@ -246,6 +260,7 @@
             // 
             // btnstay
             // 
+            btnstay.Anchor = AnchorStyles.None;
             btnstay.BackColor = Color.SeaShell;
             btnstay.FlatStyle = FlatStyle.Flat;
             btnstay.Location = new Point(136, 11);
@@ -258,6 +273,7 @@
             // 
             // btnsit
             // 
+            btnsit.Anchor = AnchorStyles.None;
             btnsit.BackColor = Color.SeaShell;
             btnsit.FlatStyle = FlatStyle.Flat;
             btnsit.Location = new Point(10, 11);
@@ -270,9 +286,10 @@
             // 
             // label10
             // 
+            label10.Anchor = AnchorStyles.Top;
             label10.AutoSize = true;
             label10.BackColor = Color.Transparent;
-            label10.Font = new Font("Goudy Stout", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.Font = new Font("Goudy Stout", 18F, FontStyle.Bold);
             label10.Location = new Point(146, 15);
             label10.Name = "label10";
             label10.Size = new Size(410, 32);
@@ -281,22 +298,23 @@
             // 
             // panel4
             // 
+            panel4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel4.Controls.Add(dgvlist);
-            panel4.Location = new Point(368, 55);
+            panel4.Location = new Point(325, 52);
             panel4.Name = "panel4";
-            panel4.Size = new Size(318, 179);
+            panel4.Size = new Size(394, 179);
             panel4.TabIndex = 26;
             // 
             // dgvlist
             // 
+            dgvlist.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgvlist.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvlist.Columns.AddRange(new DataGridViewColumn[] { StartDate, EndDate, TrainGoal });
-            dgvlist.Location = new Point(6, 8);
+            dgvlist.Location = new Point(12, 8);
             dgvlist.Name = "dgvlist";
             dgvlist.ReadOnly = true;
-            dgvlist.RowTemplate.Height = 25;
             dgvlist.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvlist.Size = new Size(307, 161);
+            dgvlist.Size = new Size(371, 161);
             dgvlist.TabIndex = 0;
             dgvlist.CellClick += dgvlist_CellClick;
             dgvlist.CellContentClick += dgvlist_CellContentClick;
@@ -318,13 +336,14 @@
             TrainGoal.HeaderText = "Goal";
             TrainGoal.Name = "TrainGoal";
             TrainGoal.ReadOnly = true;
+            TrainGoal.Width = 150;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(63, 99);
+            label1.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold);
+            label1.Location = new Point(20, 96);
             label1.Name = "label1";
             label1.Size = new Size(160, 20);
             label1.TabIndex = 27;
@@ -334,8 +353,8 @@
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(70, 127);
+            label3.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold);
+            label3.Location = new Point(27, 124);
             label3.Name = "label3";
             label3.Size = new Size(153, 20);
             label3.TabIndex = 28;
@@ -345,8 +364,8 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(54, 62);
+            label4.Font = new Font("Segoe UI Variable Display Semib", 11.25F, FontStyle.Bold);
+            label4.Location = new Point(11, 59);
             label4.Name = "label4";
             label4.Size = new Size(169, 20);
             label4.TabIndex = 29;
@@ -356,8 +375,8 @@
             // 
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Segoe UI Variable Display", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(77, 81);
+            label5.Font = new Font("Segoe UI Variable Display", 8.25F);
+            label5.Location = new Point(34, 78);
             label5.Name = "label5";
             label5.Size = new Size(119, 15);
             label5.TabIndex = 30;
@@ -367,7 +386,7 @@
             // 
             comboboxtrain.FormattingEnabled = true;
             comboboxtrain.Items.AddRange(new object[] { "Sit", "Stay", "Jump", "Roll Over", "Spin", "Lie Down", "Quiet", "Shake Paw", "No", "Drop 'it'", "Bed", "Fetch", "Play Dead", "Loose Leash Walking", "Potty Training" });
-            comboboxtrain.Location = new Point(229, 62);
+            comboboxtrain.Location = new Point(186, 59);
             comboboxtrain.Name = "comboboxtrain";
             comboboxtrain.Size = new Size(133, 23);
             comboboxtrain.TabIndex = 31;
@@ -376,7 +395,7 @@
             // 
             dtpstart.CustomFormat = "dd/MM/yyyy";
             dtpstart.Format = DateTimePickerFormat.Custom;
-            dtpstart.Location = new Point(229, 96);
+            dtpstart.Location = new Point(186, 93);
             dtpstart.Name = "dtpstart";
             dtpstart.Size = new Size(133, 23);
             dtpstart.TabIndex = 32;
@@ -385,7 +404,7 @@
             // 
             dtpend.CustomFormat = "dd/MM/yyyy";
             dtpend.Format = DateTimePickerFormat.Custom;
-            dtpend.Location = new Point(229, 125);
+            dtpend.Location = new Point(186, 122);
             dtpend.Name = "dtpend";
             dtpend.Size = new Size(133, 23);
             dtpend.TabIndex = 33;
@@ -393,10 +412,11 @@
             // btnadd
             // 
             btnadd.FlatStyle = FlatStyle.Flat;
+            btnadd.Font = new Font("Segoe UI", 8.25F);
             btnadd.ForeColor = Color.White;
-            btnadd.Location = new Point(87, 164);
+            btnadd.Location = new Point(94, 161);
             btnadd.Name = "btnadd";
-            btnadd.Size = new Size(87, 45);
+            btnadd.Size = new Size(71, 44);
             btnadd.TabIndex = 34;
             btnadd.Text = "ADD GOAL";
             btnadd.UseVisualStyleBackColor = true;
@@ -405,10 +425,11 @@
             // btnupdate
             // 
             btnupdate.FlatStyle = FlatStyle.Flat;
+            btnupdate.Font = new Font("Segoe UI", 8.25F);
             btnupdate.ForeColor = Color.White;
-            btnupdate.Location = new Point(180, 164);
+            btnupdate.Location = new Point(171, 161);
             btnupdate.Name = "btnupdate";
-            btnupdate.Size = new Size(87, 45);
+            btnupdate.Size = new Size(71, 44);
             btnupdate.TabIndex = 35;
             btnupdate.Text = "UPDATE GOAL";
             btnupdate.UseVisualStyleBackColor = true;
@@ -417,10 +438,11 @@
             // btndel
             // 
             btndel.FlatStyle = FlatStyle.Flat;
+            btndel.Font = new Font("Segoe UI", 8.25F);
             btndel.ForeColor = Color.White;
-            btndel.Location = new Point(273, 164);
+            btndel.Location = new Point(248, 161);
             btndel.Name = "btndel";
-            btndel.Size = new Size(87, 45);
+            btndel.Size = new Size(71, 44);
             btndel.TabIndex = 36;
             btndel.Text = "DELETE GOAL";
             btndel.UseVisualStyleBackColor = true;
@@ -428,9 +450,10 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Segoe UI Variable Display", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.BackColor = Color.WhiteSmoke;
+            label2.Font = new Font("Segoe UI Variable Display", 8.25F);
             label2.Location = new Point(43, 234);
             label2.Name = "label2";
             label2.Size = new Size(385, 15);
@@ -499,10 +522,10 @@
         private DateTimePicker dtpend;
         private Button btnadd;
         private Button btnupdate;
+        private Button btndel;
+        private Label label2;
         private DataGridViewTextBoxColumn StartDate;
         private DataGridViewTextBoxColumn EndDate;
         private DataGridViewTextBoxColumn TrainGoal;
-        private Button btndel;
-        private Label label2;
     }
 }

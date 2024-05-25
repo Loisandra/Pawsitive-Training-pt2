@@ -64,8 +64,9 @@
             // 
             btnexit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnexit.BackColor = Color.Chocolate;
+            btnexit.Cursor = Cursors.Hand;
             btnexit.FlatStyle = FlatStyle.Flat;
-            btnexit.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnexit.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnexit.Location = new Point(929, 3);
             btnexit.Name = "btnexit";
             btnexit.Size = new Size(26, 27);
@@ -94,8 +95,9 @@
             btnmin.BackColor = Color.Chocolate;
             btnmin.BackgroundImage = (Image)resources.GetObject("btnmin.BackgroundImage");
             btnmin.BackgroundImageLayout = ImageLayout.Stretch;
+            btnmin.Cursor = Cursors.Hand;
             btnmin.FlatStyle = FlatStyle.Flat;
-            btnmin.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnmin.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnmin.Location = new Point(865, 3);
             btnmin.Name = "btnmin";
             btnmin.Size = new Size(26, 27);
@@ -109,8 +111,9 @@
             btnmax.BackColor = Color.Chocolate;
             btnmax.BackgroundImage = (Image)resources.GetObject("btnmax.BackgroundImage");
             btnmax.BackgroundImageLayout = ImageLayout.Stretch;
+            btnmax.Cursor = Cursors.Hand;
             btnmax.FlatStyle = FlatStyle.Flat;
-            btnmax.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnmax.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnmax.Location = new Point(897, 3);
             btnmax.Name = "btnmax";
             btnmax.Size = new Size(26, 27);
@@ -121,7 +124,7 @@
             // lbltitle
             // 
             lbltitle.AutoSize = true;
-            lbltitle.Font = new Font("Goudy Stout", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lbltitle.Font = new Font("Goudy Stout", 9.75F);
             lbltitle.Location = new Point(12, 9);
             lbltitle.Name = "lbltitle";
             lbltitle.Size = new Size(551, 18);
@@ -153,8 +156,9 @@
             // btndash
             // 
             btndash.BackColor = Color.Peru;
+            btndash.Cursor = Cursors.Hand;
             btndash.FlatStyle = FlatStyle.Flat;
-            btndash.Font = new Font("Segoe UI Variable Display", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btndash.Font = new Font("Segoe UI Variable Display", 9F, FontStyle.Bold);
             btndash.Location = new Point(8, 118);
             btndash.Name = "btndash";
             btndash.Size = new Size(197, 23);
@@ -178,10 +182,11 @@
             // 
             btnlogout.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             btnlogout.BackColor = Color.Transparent;
+            btnlogout.Cursor = Cursors.Hand;
             btnlogout.FlatAppearance.BorderColor = Color.SaddleBrown;
             btnlogout.FlatAppearance.BorderSize = 0;
             btnlogout.FlatStyle = FlatStyle.Flat;
-            btnlogout.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnlogout.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Bold);
             btnlogout.Location = new Point(52, 476);
             btnlogout.Name = "btnlogout";
             btnlogout.Size = new Size(158, 56);
@@ -234,10 +239,11 @@
             // btnbehave
             // 
             btnbehave.BackColor = Color.Transparent;
+            btnbehave.Cursor = Cursors.Hand;
             btnbehave.FlatAppearance.BorderColor = Color.SaddleBrown;
             btnbehave.FlatAppearance.BorderSize = 0;
             btnbehave.FlatStyle = FlatStyle.Flat;
-            btnbehave.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnbehave.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Bold);
             btnbehave.Location = new Point(50, 325);
             btnbehave.Name = "btnbehave";
             btnbehave.Size = new Size(155, 56);
@@ -270,10 +276,11 @@
             // btndogprof
             // 
             btndogprof.BackColor = Color.Transparent;
+            btndogprof.Cursor = Cursors.Hand;
             btndogprof.FlatAppearance.BorderColor = Color.SaddleBrown;
             btndogprof.FlatAppearance.BorderSize = 0;
             btndogprof.FlatStyle = FlatStyle.Flat;
-            btndogprof.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btndogprof.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Bold);
             btndogprof.Location = new Point(50, 139);
             btndogprof.Name = "btndogprof";
             btndogprof.Size = new Size(155, 56);
@@ -286,10 +293,11 @@
             // btngoal
             // 
             btngoal.BackColor = Color.Transparent;
+            btngoal.Cursor = Cursors.Hand;
             btngoal.FlatAppearance.BorderColor = Color.SaddleBrown;
             btngoal.FlatAppearance.BorderSize = 0;
             btngoal.FlatStyle = FlatStyle.Flat;
-            btngoal.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btngoal.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Bold);
             btngoal.Location = new Point(50, 201);
             btngoal.Name = "btngoal";
             btngoal.Size = new Size(155, 56);
@@ -302,10 +310,11 @@
             // btnsession
             // 
             btnsession.BackColor = Color.Transparent;
+            btnsession.Cursor = Cursors.Hand;
             btnsession.FlatAppearance.BorderColor = Color.SaddleBrown;
             btnsession.FlatAppearance.BorderSize = 0;
             btnsession.FlatStyle = FlatStyle.Flat;
-            btnsession.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnsession.Font = new Font("Segoe UI Variable Display", 9.75F, FontStyle.Bold);
             btnsession.Location = new Point(50, 263);
             btnsession.Name = "btnsession";
             btnsession.Size = new Size(155, 56);
@@ -339,7 +348,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "TheMain";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "TheMain";
+            Text = " ";
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             panel1.ResumeLayout(false);

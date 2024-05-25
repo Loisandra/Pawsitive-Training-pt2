@@ -52,13 +52,16 @@
             comboboxgender = new ComboBox();
             btnremove = new Button();
             pictureBox2 = new PictureBox();
+            panel1 = new Panel();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picprofile).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel3
             // 
+            panel3.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel3.BackColor = Color.Peru;
             panel3.Controls.Add(label8);
             panel3.Controls.Add(lblgender);
@@ -75,8 +78,9 @@
             // 
             // label8
             // 
+            label8.Anchor = AnchorStyles.None;
             label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI Variable Text", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Font = new Font("Segoe UI Variable Text", 15.75F, FontStyle.Bold);
             label8.ForeColor = Color.White;
             label8.Location = new Point(177, 5);
             label8.Name = "label8";
@@ -86,8 +90,9 @@
             // 
             // lblgender
             // 
+            lblgender.Anchor = AnchorStyles.None;
             lblgender.AutoSize = true;
-            lblgender.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblgender.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Bold);
             lblgender.Location = new Point(204, 52);
             lblgender.Name = "lblgender";
             lblgender.Size = new Size(16, 21);
@@ -97,8 +102,9 @@
             // 
             // lblbirth
             // 
+            lblbirth.Anchor = AnchorStyles.None;
             lblbirth.AutoSize = true;
-            lblbirth.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblbirth.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Bold);
             lblbirth.Location = new Point(43, 217);
             lblbirth.Name = "lblbirth";
             lblbirth.Size = new Size(107, 21);
@@ -108,8 +114,9 @@
             // 
             // lblbreed
             // 
+            lblbreed.Anchor = AnchorStyles.None;
             lblbreed.AutoSize = true;
-            lblbreed.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblbreed.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Bold);
             lblbreed.Location = new Point(43, 140);
             lblbreed.Name = "lblbreed";
             lblbreed.Size = new Size(81, 21);
@@ -119,8 +126,9 @@
             // 
             // lbldogname
             // 
+            lbldogname.Anchor = AnchorStyles.None;
             lbldogname.AutoSize = true;
-            lbldogname.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lbldogname.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Bold);
             lbldogname.Location = new Point(43, 52);
             lbldogname.Name = "lbldogname";
             lbldogname.Size = new Size(78, 21);
@@ -130,8 +138,9 @@
             // 
             // label3
             // 
+            label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Variable Text", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Font = new Font("Segoe UI Variable Text", 15.75F, FontStyle.Bold);
             label3.ForeColor = Color.White;
             label3.Location = new Point(15, 180);
             label3.Name = "label3";
@@ -141,8 +150,9 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Variable Text", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Font = new Font("Segoe UI Variable Text", 15.75F, FontStyle.Bold);
             label2.ForeColor = Color.White;
             label2.Location = new Point(15, 90);
             label2.Name = "label2";
@@ -152,8 +162,9 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Variable Text", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Segoe UI Variable Text", 15.75F, FontStyle.Bold);
             label1.ForeColor = Color.White;
             label1.Location = new Point(15, 5);
             label1.Name = "label1";
@@ -163,11 +174,12 @@
             // 
             // btnsave
             // 
+            btnsave.Anchor = AnchorStyles.None;
             btnsave.BackColor = Color.SaddleBrown;
             btnsave.FlatAppearance.BorderColor = Color.SaddleBrown;
             btnsave.FlatStyle = FlatStyle.Popup;
             btnsave.ForeColor = Color.White;
-            btnsave.Location = new Point(501, 482);
+            btnsave.Location = new Point(97, 258);
             btnsave.Name = "btnsave";
             btnsave.Size = new Size(66, 31);
             btnsave.TabIndex = 11;
@@ -177,11 +189,12 @@
             // 
             // btndel
             // 
+            btndel.Anchor = AnchorStyles.None;
             btndel.BackColor = Color.SaddleBrown;
             btndel.FlatAppearance.BorderColor = Color.SaddleBrown;
             btndel.FlatStyle = FlatStyle.Popup;
             btndel.ForeColor = Color.White;
-            btndel.Location = new Point(580, 482);
+            btndel.Location = new Point(176, 258);
             btndel.Name = "btndel";
             btndel.Size = new Size(66, 31);
             btndel.TabIndex = 13;
@@ -191,10 +204,11 @@
             // 
             // label5
             // 
+            label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(428, 233);
+            label5.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Bold);
+            label5.Location = new Point(24, 9);
             label5.Name = "label5";
             label5.Size = new Size(139, 21);
             label5.TabIndex = 11;
@@ -203,10 +217,11 @@
             // 
             // label6
             // 
+            label6.Anchor = AnchorStyles.None;
             label6.AutoSize = true;
             label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(428, 291);
+            label6.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Bold);
+            label6.Location = new Point(24, 67);
             label6.Name = "label6";
             label6.Size = new Size(140, 21);
             label6.TabIndex = 14;
@@ -215,10 +230,11 @@
             // 
             // label7
             // 
+            label7.Anchor = AnchorStyles.None;
             label7.AutoSize = true;
             label7.BackColor = Color.Transparent;
-            label7.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(428, 348);
+            label7.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Bold);
+            label7.Location = new Point(24, 124);
             label7.Name = "label7";
             label7.Size = new Size(166, 21);
             label7.TabIndex = 15;
@@ -227,29 +243,33 @@
             // 
             // txtboxname
             // 
-            txtboxname.Location = new Point(431, 262);
+            txtboxname.Anchor = AnchorStyles.None;
+            txtboxname.Location = new Point(27, 38);
             txtboxname.Name = "txtboxname";
             txtboxname.Size = new Size(215, 23);
             txtboxname.TabIndex = 16;
             // 
             // txtboxbreed
             // 
-            txtboxbreed.Location = new Point(431, 322);
+            txtboxbreed.Anchor = AnchorStyles.None;
+            txtboxbreed.Location = new Point(27, 98);
             txtboxbreed.Name = "txtboxbreed";
             txtboxbreed.Size = new Size(215, 23);
             txtboxbreed.TabIndex = 17;
             // 
             // dtpbirth
             // 
+            dtpbirth.Anchor = AnchorStyles.None;
             dtpbirth.CustomFormat = "dd-MM-yyyy";
             dtpbirth.Format = DateTimePickerFormat.Custom;
-            dtpbirth.Location = new Point(431, 377);
+            dtpbirth.Location = new Point(27, 153);
             dtpbirth.Name = "dtpbirth";
             dtpbirth.Size = new Size(215, 23);
             dtpbirth.TabIndex = 18;
             // 
             // btnupload
             // 
+            btnupload.Anchor = AnchorStyles.Bottom;
             btnupload.BackColor = Color.SaddleBrown;
             btnupload.FlatAppearance.BorderColor = Color.SaddleBrown;
             btnupload.FlatStyle = FlatStyle.Popup;
@@ -264,6 +284,8 @@
             // 
             // picprofile
             // 
+            picprofile.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            picprofile.BackColor = Color.White;
             picprofile.BackgroundImageLayout = ImageLayout.Stretch;
             picprofile.Image = (Image)resources.GetObject("picprofile.Image");
             picprofile.Location = new Point(103, 21);
@@ -276,10 +298,11 @@
             // 
             // label4
             // 
+            label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(430, 407);
+            label4.Font = new Font("Segoe UI Variable Display", 12F, FontStyle.Bold);
+            label4.Location = new Point(26, 183);
             label4.Name = "label4";
             label4.Size = new Size(151, 21);
             label4.TabIndex = 23;
@@ -288,15 +311,17 @@
             // 
             // comboboxgender
             // 
+            comboboxgender.Anchor = AnchorStyles.None;
             comboboxgender.FormattingEnabled = true;
             comboboxgender.Items.AddRange(new object[] { "Female", "Male" });
-            comboboxgender.Location = new Point(431, 431);
+            comboboxgender.Location = new Point(27, 207);
             comboboxgender.Name = "comboboxgender";
             comboboxgender.Size = new Size(150, 23);
             comboboxgender.TabIndex = 24;
             // 
             // btnremove
             // 
+            btnremove.Anchor = AnchorStyles.Bottom;
             btnremove.BackColor = Color.SaddleBrown;
             btnremove.FlatAppearance.BorderColor = Color.SaddleBrown;
             btnremove.FlatStyle = FlatStyle.Popup;
@@ -311,14 +336,34 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(428, 32);
+            pictureBox2.Location = new Point(414, 12);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(230, 191);
+            pictureBox2.Size = new Size(250, 211);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
+            // 
+            // panel1
+            // 
+            panel1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            panel1.BackColor = Color.Transparent;
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(comboboxgender);
+            panel1.Controls.Add(btnsave);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(btndel);
+            panel1.Controls.Add(label6);
+            panel1.Controls.Add(label7);
+            panel1.Controls.Add(txtboxname);
+            panel1.Controls.Add(dtpbirth);
+            panel1.Controls.Add(txtboxbreed);
+            panel1.Location = new Point(408, 229);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(265, 295);
+            panel1.TabIndex = 13;
             // 
             // dashboard
             // 
@@ -329,20 +374,11 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(744, 536);
             Controls.Add(btnremove);
-            Controls.Add(comboboxgender);
-            Controls.Add(label4);
             Controls.Add(picprofile);
             Controls.Add(btnupload);
             Controls.Add(pictureBox2);
-            Controls.Add(dtpbirth);
-            Controls.Add(txtboxbreed);
-            Controls.Add(txtboxname);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(btndel);
-            Controls.Add(btnsave);
             Controls.Add(panel3);
+            Controls.Add(panel1);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
             Name = "dashboard";
@@ -352,8 +388,9 @@
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)picprofile).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -380,5 +417,6 @@
         private Label label8;
         private Button btnremove;
         private PictureBox pictureBox2;
+        private Panel panel1;
     }
 }

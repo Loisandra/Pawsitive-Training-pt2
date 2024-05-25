@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DogProfile));
             btnadd = new Button();
             panelbuttons = new Panel();
             btnreport = new Button();
@@ -35,16 +37,24 @@
             cal = new MonthCalendar();
             panelcalendar = new Panel();
             paneldash = new Panel();
+            panel1 = new Panel();
+            pictureBox1 = new PictureBox();
+            slidePic = new PictureBox();
+            timer1 = new System.Windows.Forms.Timer(components);
             panelbuttons.SuspendLayout();
             panelcalendar.SuspendLayout();
+            paneldash.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)slidePic).BeginInit();
             SuspendLayout();
             // 
             // btnadd
             // 
             btnadd.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             btnadd.BackColor = Color.SaddleBrown;
+            btnadd.Cursor = Cursors.Hand;
             btnadd.FlatStyle = FlatStyle.Flat;
-            btnadd.Font = new Font("Segoe UI Variable Text", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnadd.Font = new Font("Segoe UI Variable Text", 12F, FontStyle.Bold);
             btnadd.ForeColor = Color.White;
             btnadd.Location = new Point(19, 13);
             btnadd.Name = "btnadd";
@@ -70,8 +80,9 @@
             // 
             btnreport.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             btnreport.BackColor = Color.SaddleBrown;
+            btnreport.Cursor = Cursors.Hand;
             btnreport.FlatStyle = FlatStyle.Flat;
-            btnreport.Font = new Font("Segoe UI Variable Text", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnreport.Font = new Font("Segoe UI Variable Text", 12F, FontStyle.Bold);
             btnreport.ForeColor = Color.White;
             btnreport.Location = new Point(19, 171);
             btnreport.Name = "btnreport";
@@ -85,8 +96,9 @@
             // 
             btnsub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             btnsub.BackColor = Color.SaddleBrown;
+            btnsub.Cursor = Cursors.Hand;
             btnsub.FlatStyle = FlatStyle.Flat;
-            btnsub.Font = new Font("Segoe UI Variable Text", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnsub.Font = new Font("Segoe UI Variable Text", 12F, FontStyle.Bold);
             btnsub.ForeColor = Color.White;
             btnsub.Location = new Point(19, 91);
             btnsub.Name = "btnsub";
@@ -115,12 +127,53 @@
             // 
             // paneldash
             // 
-            paneldash.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            paneldash.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             paneldash.BackColor = Color.SaddleBrown;
+            paneldash.Controls.Add(panel1);
+            paneldash.Controls.Add(pictureBox1);
+            paneldash.Controls.Add(slidePic);
             paneldash.Location = new Point(278, 37);
             paneldash.Name = "paneldash";
             paneldash.Size = new Size(454, 435);
             paneldash.TabIndex = 9;
+            // 
+            // panel1
+            // 
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel1.BackColor = Color.Snow;
+            panel1.Location = new Point(13, 134);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(428, 10);
+            panel1.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(13, 5);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(428, 133);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
+            // 
+            // slidePic
+            // 
+            slidePic.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            slidePic.BackColor = Color.Transparent;
+            slidePic.Image = (Image)resources.GetObject("slidePic.Image");
+            slidePic.Location = new Point(16, 164);
+            slidePic.Name = "slidePic";
+            slidePic.Size = new Size(422, 255);
+            slidePic.SizeMode = PictureBoxSizeMode.StretchImage;
+            slidePic.TabIndex = 0;
+            slidePic.TabStop = false;
+            // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Interval = 2000;
+            timer1.Tick += timer1_Tick;
             // 
             // DogProfile
             // 
@@ -139,11 +192,13 @@
             Text = "DogProfile";
             panelbuttons.ResumeLayout(false);
             panelcalendar.ResumeLayout(false);
+            paneldash.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)slidePic).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-        private PictureBox pictureBox2;
         private Button btnadd;
         private Panel panelbuttons;
         private Button button3;
@@ -152,5 +207,9 @@
         private MonthCalendar cal;
         private Panel panelcalendar;
         private Panel paneldash;
+        private PictureBox slidePic;
+        private System.Windows.Forms.Timer timer1;
+        private Panel panel1;
+        private PictureBox pictureBox1;
     }
 }

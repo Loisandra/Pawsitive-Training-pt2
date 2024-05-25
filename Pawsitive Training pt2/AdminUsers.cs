@@ -36,6 +36,7 @@ namespace Pawsitive_Training_pt2
             {
                 dgvUsers.DataSource = dt;
                 dgvUsers.Columns["Username"].HeaderText = "USERNAMES";
+                dgvUsers.Columns["Username"].Width = 510;
             }
             else
             {

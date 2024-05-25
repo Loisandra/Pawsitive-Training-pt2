@@ -37,5 +37,11 @@ namespace Pawsitive_Training_pt2
         private void label4_Click(object sender, EventArgs e)
         {
         }
+
+        private void btnadd_Click(object sender, EventArgs e)
+        {
+            string f = @"C:\Users\saced\Documents\SANDRA FILES\VIDS\Puppy Training - How To Potty Train A PUPPY In 5 Minutes!.mp4";
+            MediaPlayer.URL = f;
+        }
     }
 }

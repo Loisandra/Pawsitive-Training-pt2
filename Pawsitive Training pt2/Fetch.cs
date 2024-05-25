@@ -33,5 +33,11 @@ namespace Pawsitive_Training_pt2
             ReleaseCapture();
             SendMessage(Handle, 0x112, 0xf012, 0);
         }
+
+        private void btnadd_Click(object sender, EventArgs e)
+        {
+            string f = @"C:\Users\saced\Documents\SANDRA FILES\VIDS\How to Teach Your Dog to Fetch _ Chewy.mp4";
+            MediaPlayer.URL = f;
+        }
     }
 }
